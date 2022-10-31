@@ -58,12 +58,14 @@ table {
     /* align-items: ; */
     border-radius: 10px;
     border-spacing: 0px;
+    counter-reset: white;
 }
 
 table th {
     text-align: start;
     /* border-radius: 5px; */
     padding: 5px;
+    color: white;
 }
 
 table tr:nth-of-type(1) {
