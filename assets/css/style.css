@@ -19,7 +19,9 @@ section {
     flex-direction: column;
     width: 400px;
     padding: 20px;
-    gap: 10px
+    gap: 10px;
+    background-color: lightgray;
+    border-radius: 10px;
 }
 
 form {
@@ -41,17 +43,13 @@ select {
     border: 1px solid blueviolet;
 }
 
-input:valid input::after {
-    content: "JA";
-    height: 40px;
-    width: 40px;
-    background-color: red;
-}
 
 #submit {
     padding: 8px;
     background-color: blueviolet;
     border-radius: 5px;
+    color: white;
+    font-size: 20px;
 }
 
 table {
