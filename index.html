@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Kalorienrechner</title>
+</head>
+
+<body>
+    <section>
+        <h1>Kalorienrechner</h1>
+        <form id="form" action="">
+            <label for="">Körpergröße</label>
+            <input placeholder="Größe" id="größe" type="number" required>
+            <label for="">Alter</label>
+            <input placeholder="Alter" id="alter" type="number" required>
+            <label for="">Gewicht</label>
+            <input placeholder="Gewicht" id="gewicht" type="number" required>
+            <label id="labelgender">
+                <label for="körperbau"></label>
+                <input type="radio" name="körperbau" id="Weiblich">Weiblich
+                <input type="radio" name="körperbau" id="Maennlich">Männlich
+            </label>
+            <select name="Arbeits- und Freizeitaktivität" id="Aktivität">
+                <option value="Schlafen">Schlafen</option>
+                <option value="SitzenLiegen">Nur Sitzen oder Liegen</option>
+                <option value="mainSitzen">Ausschließlich sitzende Tätigkeit mit wenig oder keiner körperlichen
+                    Aktivität in der Freizeit, z.B. Büroarbeit</option>
+                <option value="zeitSitzen">Sitzende Tätigkeit mit zeitweilig gehender oder stehender Tätigkeit, z.B.
+                    Studierende, Fließbandarbeiter, Laboranten, Kraftfahrer</option>
+                <option value="maingehen">Überwiegend gehende oder stehende Tätigkeit, z.B. Verkäufer, Kellner,
+                    Handwerker, Mechaniker, Hausfrauen</option>
+                <option value="anstrengend">Körperlich anstrengende berufliche Arbeit
+                </option>
+            </select>
+            <!-- <button type="button" >Submit</button> -->
+            <input type="submit" value="Submit" onclick="berechnen(event)" id="submit">
+        </form>
+        <article>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>kcal</th>
+                    <th>kj</th>
+                </tr>
+                <tr>
+                    <th>Grundumsatz</th>
+                    <th id="grundKcal"></th>
+                    <th id="grundkJ"></th>
+                </tr>
+                <tr>
+                    <th>Gesamtumsatz</th>
+                    <th id="gesamtKcal"></th>
+                    <th id="gesamtkJ"></th>
+                </tr>
+            </table>
+        </article>
+    </section>
+
+
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

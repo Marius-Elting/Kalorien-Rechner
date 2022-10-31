@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#labelgender {
+    display: flex;
+    gap: 5px;
+}
+
+input,
+select {
+    padding: 8px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid blueviolet;
+}
+
+input:valid input::after {
+    content: "JA";
+    height: 40px;
+    width: 40px;
+    background-color: red;
+}
+
+#submit {
+    padding: 8px;
+    background-color: blueviolet;
+    border-radius: 5px;
+}
