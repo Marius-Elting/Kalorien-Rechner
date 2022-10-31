@@ -53,5 +53,3 @@ function berechnen(event) {
     gesamtkJOutput.innerHTML = gesamtkJ.toFixed(2);
     gesamtKcalOutput.innerHTML = gesamtKcal.toFixed(2);
 }
-
-
