@@ -20,7 +20,7 @@ function berechnen(event) {
 
     //Grundumsatz
     if (selectMann == true) {
-        grundKcal = 664.7 + (13.7 * weight) + (5 * height) - (6.8 * age);
+        grundKcal = 66.47 + (13.7 * weight) + (5 * height) - (6.8 * age);
         grundKcalOutput.innerHTML = grundKcal.toFixed(2);;
 
     } else if (selectFrau == true) {
